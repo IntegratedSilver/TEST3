@@ -26,6 +26,7 @@
 - Set up backend to save user login info, save game data, and load game data
 - Have pages for Login, Dashboard, Console Select, Game Select, the Emulator Page, About Page, Credit Page
 - Set up a Router to go between the pages
+- Have a Forums Page where people can post comments about the games they are playing/or for help when playing
 
 ### Main Focus ATM
 - Set up GameBoy Emulator to load and run a game smoothly (Success)
