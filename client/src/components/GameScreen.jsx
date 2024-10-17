@@ -1,6 +1,7 @@
 import React from "react";
 import { WasmBoy } from "wasmboy";
 import PKMNRed from '../assets/PKMNRed.gb'
+import PKMNCrystal from '../assets/PKMNCrystal.gbc'
 import {useRef} from "react"
 
 
@@ -14,7 +15,7 @@ const GameScreen = () => {
         headless: false,
         useGbcWhenOptional: true,
         isAudioEnabled: true,
-        frameSkip: 1,
+        frameSkip: 0,
         audioBatchProcessing: true,
         timersBatchProcessing: false,
         audioAccumulateSamples: true,
@@ -25,7 +26,7 @@ const GameScreen = () => {
         gameboyFPSCap: 60,
         updateGraphicsCallback: false,
         updateAudioCallback: false,
-        saveStateCallback: false
+        saveStateCallback: true
       };
 
       await WasmBoy.config(WasmBoyOptions, canvasRef.current)
